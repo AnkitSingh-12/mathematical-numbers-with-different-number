@@ -1,0 +1,15 @@
+#1 SPY NUMBERS = whose sum and product are same and equal
+n = int(input())  # Take user input
+num = str(n)  # Convert number to string
+
+s = 0  # sum
+p = 1  # product
+for d in num:  
+    d = int(d)  # Convert digit to integer
+    s += d  # Add to sum
+    p *= d  # Multiply for product
+
+if s == p:
+    print("Spy Number")
+else:
+    print("Not a Spy Number")
