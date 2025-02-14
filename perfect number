@@ -1,0 +1,25 @@
+#PERFECT NUMBER= sum of divisor (excluding itself=number)
+
+n=int(input())
+dsum=0
+for i in range (1,n//2+1):
+    if n%i==0:
+        dsum+=i
+if n==dsum:
+    print('n is perfect')
+else:
+    print('n is not perfect')
+
+#or
+
+n=int(input())
+dsum=0
+i=1
+while i<n//2+1:
+    if n%i==0:
+        dsum+=i
+    i+=1
+if n==dsum:
+    print('n is perfect')
+else:
+    print('n is not perfect')
