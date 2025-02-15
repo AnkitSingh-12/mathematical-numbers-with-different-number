@@ -10,7 +10,9 @@ if n==dsum:
 else:
     print('n is not perfect')
 
+
 #or
+
 
 n=int(input())
 dsum=0
